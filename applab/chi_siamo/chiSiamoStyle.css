@@ -4,6 +4,54 @@
     padding: 0;
 }
 
+
+
+header{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    display: flex; /*li mette in orizzonatale*/
+    justify-content: space-between;/*testo a detsra, funziona solo con flex prima*/
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: blueviolet;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em; /*em sta per , in base al font size utilizzato dall'utente*/
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none; /*modifica il punto della lista*/
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:blueviolet;
+    border-radius: 20px ;
+}
+header ul li a:hover{
+    background: #fff;
+    color: #5411c0;
+}
+
+header a.logo{
+    background: #fff;
+    border-radius: 30px ;
+    padding: 6px 15px;
+}
+
 body
 {
     display: flex;/**/
@@ -46,7 +94,7 @@ section::after
     justify-content: center;/**/
     align-items: center;/**/
     flex-wrap: wrap;/**/
-    margin: 40px 0;/**/
+    margin: 40px 150px;/**/
 }
 
 .container .card
