@@ -1,7 +1,20 @@
 <!doctype html>
 <html lang="it">
-<head> <link rel="stylesheet"  href="index.css">
+<head> 
+     <link rel="stylesheet"  href="index.css">
      <title>Applab Home</title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
 </head>
 <body>
      <header>
@@ -30,28 +43,31 @@ L’obbiettivo è di creare siti Web responsive facilmente convertibili in App m
 
 Durante gli incontri settimanali a turno alcuni studenti preparano dei tutorial sugli argomenti riguardanti il design di un sito web. <br><br></p>
      </div>
-     <script>
-          let stars = document.getElementById('stars');
-          let applab = document.getElementById('applab');
-          let mountains_behind = document.getElementById('mountains_behind');
-          let text = document.getElementById('text');
-          let btn = document.getElementById('btn');
-          let mountains_front = document.getElementById('mountains_front');
-          let header = document.queryCommandValue('header');
 
+     <div class="container">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">
+                <h1></h1>
+                <p></p>
+              </div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="days"></div>
+          </div>
+        </div>
 
-          window.addEventListener('scroll',function(){
-               let value = window.scrollY;
-               stars.style.left = value * 0.25 + 'px';
-               applab.style.top = value * 1.05 + 'px';
-               mountains_behind.style.top = value * 0.5 + 'px';
-               mountains_front.style.top = value * 0 + 'px';
-               text.style.marginRight = value * 3 + 'px';
-               text.style.marginTop = value * 1.5 + 'px';
-               btn.style.marginTop = value * 1.5 + 'px';
-               header.style.top = value * 0.5 + 'px';
-          })
-     </script>
+     <script  src="script.js"></script>
 
 </body>
 </html>
