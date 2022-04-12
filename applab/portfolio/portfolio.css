@@ -1,0 +1,50 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; /*obblighi a mentenere quelle dimensioni, il padding e margin non eccedono dalla grandezza impostata*/
+     font-family: 'Poppins', sans-serif;
+}
+body{
+     min-height: 100vh;
+     overflow-x: hidden;
+     background :linear-gradient(#2b1055, #5411c0);
+}
+header{
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 30px 100px;
+     display: flex; /*li mette in orizzonatale*/
+     justify-content: space-between;/*testo a detsra, funziona solo con flex prima*/
+     align-items: center;
+     z-index: 10000;
+}
+header .logo{
+     color: blueviolet;
+     font-weight: 700;
+     text-decoration: none;
+     font-size: 2em; /*em sta per , in base al font size utilizzato dall'utente*/
+     text-transform: uppercase;
+     letter-spacing: 2px;
+}
+header ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+header ul li{
+     list-style: none; /*modifica il punto della lista*/
+     margin-left: 20px;
+}
+header ul li a{
+     text-decoration: none;
+     padding: 6px 15px;
+     color:blueviolet;
+     border-radius: 20px ;
+}
+header ul li a:hover,
+header ul li a.active{
+     background: #fff;
+     color: #5411c0;
+}
