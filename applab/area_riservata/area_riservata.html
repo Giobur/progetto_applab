@@ -1,20 +1,48 @@
 <!doctype html>
 <html>
-     <head>
-          <link rel="stylesheet"  href="area_riservata.css">
-          <link rel="icon" href="../immagini/applab.png" type="image/x-icon">
-          <title>Area riservata</title>
-     </head>
-     <body>
-          <header>
-               <a href="../index.html" class = "logo">APPLAB</a>
-               <ul>
-                    <li><a href="../index.html"><strong>Home</strong></a></li>
-                    <li><a href="../tutorial/tutorial.html"><strong>Tutorial</strong></a></li>
-                    <li><a href="../portfolio/portfolio.html"><strong>Portfolio</strong></a></li>
-                    <li><a href="../area_riservata/area_riservata.html" class="active"><strong>Area riservata</strong></a></li>
-                    <li><a href="#contatti"><strong>Contatti</strong></a></li>
-               </ul> 
-          </header>
-     </body>
+
+<head>
+     <link rel="stylesheet" href="area_riservata.css">
+     <link rel="icon" href="../immagini/applab.png" type="image/x-icon">
+     <title>Area riservata</title>
+     <link rel="stylesheet" href="arStyle.css">
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <header>
+          <a href="../index.html" class="logo">APPLAB</a>
+          <ul>
+               <li><a href="../index.html"><strong>Home</strong></a></li>
+               <li><a href="../tutorial/tutorial.html"><strong>Tutorial</strong></a></li>
+               <li><a href="../portfolio/portfolio.html"><strong>Portfolio</strong></a></li>
+               <li><a href="../area_riservata/area_riservata.html" class="active"><strong>Area riservata</strong></a>
+               </li>
+               <li><a href="#contatti"><strong>Contatti</strong></a></li>
+          </ul>
+     </header>
+     <div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
+     </div>
+     <form>
+          <h3>Area Riservata Login</h3>
+
+          <label for="username">Username</label>
+          <input type="email" placeholder="Email" id="email" required autofocus>
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" id="password" required>
+
+          <button>Log In</button>
+          <!--<div class="social">
+                 <div class="go"><i class="fab fa-google"></i>  Google</div>
+                 <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+               </div>-->
+     </form>
+</body>
+
 </html>
